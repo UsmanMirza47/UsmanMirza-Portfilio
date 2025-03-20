@@ -137,12 +137,18 @@ const Navbar = () => {
           <a
             href="#home"
             className="text-subtitleColor text-[16px] block w-full cursor-pointer"
+            onClick={() => {
+              setIsNavVisible();
+            }}
           >
             Home
           </a>
           <a
             href="#about"
             className="text-subtitleColor text-[16px] block w-full cursor-pointer"
+            onClick={() => {
+              setIsNavVisible();
+            }}
           >
             About
           </a>
@@ -155,12 +161,18 @@ const Navbar = () => {
           <a
             href="#project"
             className="text-subtitleColor text-[16px] block w-full cursor-pointer"
+            onClick={() => {
+              setIsNavVisible();
+            }}
           >
             Projects
           </a>
           <a
             href="#contact"
             className="text-subtitleColor text-[16px] block w-full cursor-pointer"
+            onClick={() => {
+              setIsNavVisible();
+            }}
           >
             Contact
           </a>
