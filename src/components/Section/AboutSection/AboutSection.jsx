@@ -14,7 +14,7 @@ const AboutSection = () => {
               About Me
             </p>
             <p className="text-4xl text-subtitleColor">
-              Hello! My name is Yash Kapure
+              Hello! My name is Usman Mirza
             </p>
             <p className="text-lg text-[#718096]">
               I am a self-taught programmer with a passion for learning and
