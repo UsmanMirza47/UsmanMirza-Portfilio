@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "The Kolorado Paints",
+    "para": "A Fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive begaviour, smooth touch UI with API Integration. This project is for Artistic Content.",
+    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
+    "visit": "/#",
+    "github": "/#",
+    "img": "image/landing.png"
+  },
+  {
+    "id": 2,
+    "name": "Shangrila Petition Platform",
+    "para": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
+    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
+    "visit": "/#",
+    "github": "/#",
+    "img": "image/landing.png"
+  },
+  {
+    "id": 3,
+    "name": "Shangrila Petition Platform",
+    "para": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
+    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
+    "visit": "/#",
+    "github": "/#",
+    "img": "image/landing.png"
+  },
+  {
+    "id": 4,
+    "name": "Shangrila Petition Platform",
+    "para": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
+    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
+    "visit": "/#",
+    "github": "/#",
+    "img": "image/landing.png"
+  },
+  {
+    "id": 5,
+    "name": "Shangrila Petition Platform",
+    "para": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
+    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
+    "visit": "/#",
+    "github": "/#",
+    "img": "image/landing.png"
+  }
+]

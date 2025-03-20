@@ -1,0 +1,22 @@
+* {
+    font-family: Poppins, sans-serif;
+    scroll-behavior: smooth;
+    text-align: justify;
+}
+
+.anim {
+    animation: move 3s infinite;
+    /* animation-delay: 2s; */
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    0% {
+            box-shadow: 0 0 0 0 #000000b3;
+            transform: scale(.95);
+        }
+}
+
+::-webkit-scrollbar{
+    scrollbar-width: none;
+}
