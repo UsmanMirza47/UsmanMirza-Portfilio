@@ -1,30 +1,30 @@
 [
   {
     "id": 1,
-    "name": "The Kolorado Paints",
-    "para": "A Fully Functional Next.js Based Frontend along with MERN Dashboard. Having responsive begaviour, smooth touch UI with API Integration. This project is for Artistic Content.",
-    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
-    "visit": "/#",
-    "github": "/#",
-    "img": "image/landing.png"
+    "name": "World Atlas",
+    "para": "I made this whole website with latest versions of React. This Complete Demo Website is Made using ReactJs, Tailwind, API. This website Having responsive behaviour, smooth touch UI with API Integration.",
+    "stack": ["React.js", "API", "Tailwind CSS"],
+    "visit": "https://worldatlas47.netlify.app/",
+    "github": "https://github.com/UsmanMirza47/CountryAxiosRouter",
+    "img": "image/WorldAtlas.png"
   },
   {
     "id": 2,
-    "name": "Shangrila Petition Platform",
-    "para": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
-    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
-    "visit": "/#",
-    "github": "/#",
-    "img": "image/landing.png"
+    "name": "UsmanMirza Portfolio",
+    "para": "This is my personal Portfolio website. Having responsive behaviour, smooth touch UI with API Integration. I made this using React.js Tailwind and JavaScript with Json Data.",
+    "stack": ["React.js", "Tailwind CSS", "Json Data"],
+    "visit": "https://usmanmirza47portfolio.netlify.app/",
+    "github": "https://github.com/UsmanMirza47/UsmanMirza-Portfilio",
+    "img": "image/PersonalPortfolio.png"
   },
   {
     "id": 3,
-    "name": "Shangrila Petition Platform",
-    "para": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
-    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
-    "visit": "/#",
-    "github": "/#",
-    "img": "image/landing.png"
+    "name": "RazorPay Clone",
+    "para": "I created a RazorPay clone using ReactJs and Tailwind. This is a clone of Razorpay website. And played a lot with JSON Data.",
+    "stack": ["React.js", "Tailwind CSS", "JSON Data"],
+    "visit": "https://razorpay47clone.netlify.app/",
+    "github": "https://github.com/UsmanMirza47/Razorpay-Clone",
+    "img": "image/RazorPay.png"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
     "visit": "/#",
     "github": "/#",
-    "img": "image/landing.png"
+    "img": "image/15.png"
   },
   {
     "id": 5,
@@ -42,6 +42,6 @@
     "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
     "visit": "/#",
     "github": "/#",
-    "img": "image/landing.png"
+    "img": "image/news-o-pedia.png"
   }
 ]
