@@ -87,7 +87,7 @@ const Navbar = () => {
         </div>
         {/* Right-Section */}
         <button
-          className="w-8 h-8 rounded-full relative bg-[url(https://avatars.githubusercontent.com/u/61585443?v=4)] bg-center bg-cover bg-no-repeat"
+          className="w-8 h-8 rounded-full relative bg-[url(/image/logo.jpeg)] bg-center bg-cover bg-no-repeat"
           onClick={(event) => {
             handleNavStatus(event);
           }}
@@ -109,7 +109,7 @@ const Navbar = () => {
         >
           <div className="w-32 h-32 rounded-full bg-slate-500 flex justify-between items-center">
             <img
-              src="https://avatars.githubusercontent.com/u/61585443?v=4"
+              src="/image/logo.jpeg"
               className="w-full h-full rounded-full"
             />
           </div>

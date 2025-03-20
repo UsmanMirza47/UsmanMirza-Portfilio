@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "./image/landing.png";
 import project from "../../API/Project.json";
 
 const Project = () => {
