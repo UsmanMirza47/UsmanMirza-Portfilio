@@ -28,12 +28,12 @@
   },
   {
     "id": 4,
-    "name": "Shangrila Petition Platform",
-    "para": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
-    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
-    "visit": "/#",
-    "github": "/#",
-    "img": "image/15.png"
+    "name": "Notes App",
+    "para": "I make this app using React.js Tailwind Css and Redux Toolkit. This is also fully responsive and have feacture to add notes in LocalStorage. This is only for revision Purpose",
+    "stack": ["React.js", "Tailwind CSS", "Redux Toolkit", "React-Router"],
+    "visit": "https://notesapp47.netlify.app/",
+    "github": "https://github.com/UsmanMirza47/NotesApp",
+    "img": "image/NotesApp.png"
   },
   {
     "id": 5,
