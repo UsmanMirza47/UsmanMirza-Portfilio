@@ -13,7 +13,7 @@ const EndBar = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 448 512"
               height="1em"
               width="1em"
@@ -29,7 +29,7 @@ const EndBar = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 512 512"
               height="1em"
               width="1em"

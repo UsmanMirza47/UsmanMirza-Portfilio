@@ -44,8 +44,8 @@ const Project = () => {
                   <strong>Stack</strong>
                 </div>
                 <ul className="flex flex-row justify-center gap-2 flex-wrap">
-                  {stack.map((curStack) => {
-                    return <li>{curStack}</li>;
+                  {stack.map((curStack, i) => {
+                    return <li key={i}>{curStack}</li>;
                   })}
                 </ul>
                 <div className="flex flex-row gap-2 justify-between items-center mt-4 w-full">

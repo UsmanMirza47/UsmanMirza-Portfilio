@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import heroImage1 from "./IMG-20230130-WA0018.jpg";
+import { IoCloseOutline } from "react-icons/io5";
 
 const HeroSection = () => {
+  const [resume, setResume] = useState(true);
+
+  const handleResume = () => {
+    setResume(!resume);
+  };
+
   return (
     <section className="w-full bg-[#1a202c] text-white">
       {/* main Div */}
@@ -25,7 +32,7 @@ const HeroSection = () => {
             React.js, particularly within the{" "}
             <mark className="bg-[#c6f6d5] px-[6px] py-[0.3px] rounded-full">
               MERN
-            </mark>{" "}
+            </mark>
             stack.
             <br />
             My Experties include in React.js & Tailwind CSS for high-scale
@@ -33,23 +40,56 @@ const HeroSection = () => {
           </p>
           {/* Hero Button */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-            <button className="text-lg text-[#1a202c] h-12 w-full sm:w-[116.59px] px-6  rounded-full flex justify-center items-center text-nowrap bg-gradient-to-l from-[#7928CA] to-[#FF0080] hover:bg-gradient-to-r">
-              Hire me
-            </button>
-            <button className="text-lg text-[#1a202c] h-12 w-[175.83px] px-6  rounded-full flex justify-between items-center text-nowrap bg-gradient-to-l from-[#7928CA] to-[#FF0080] hover:bg-gradient-to-r">
-              My Resume
-              <svg
-                viewBox="0 0 24 24"
-                focusable="false"
-                aria-hidden="true"
-                className="w-5 h-5"
+            <a href="#contact">
+              <button className="text-lg text-[#1a202c] h-12 w-full sm:w-[116.59px] px-6  rounded-full flex justify-center items-center text-nowrap bg-gradient-to-l from-[#7928CA] to-[#FF0080] hover:bg-gradient-to-r">
+                Hire me
+              </button>
+            </a>
+            {/* Resume Main Div Include Button */}
+            <div className="relative">
+              {/* Resume Picture Exclude Button*/}
+              <div
+                className={`absolute top-[60px]  sm:-left-[70px] border w-[300px] rounded-md bg-[#2d3748] z-50 ${
+                  resume ? "hidden" : "block"
+                }`}
               >
-                <path
-                  fill="currentColor"
-                  d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                ></path>
-              </svg>
-            </button>
+                <p className="relative w-full p-3 border-b flex justify-between items-center">
+                  <span className="absolute -top-[15%] left-2/4 -translate-x-1/2 w-3 h-3 bg-[#2d3748] rotate-45 border-t border-l"></span>
+                  Click on Image to Open
+                  <IoCloseOutline
+                    className="text-2xl cursor-pointer"
+                    onClick={() => handleResume()}
+                  />
+                </p>
+                {/* Resume Image */}
+                <div className="p-3">
+                  <a
+                    href="https://drive.google.com/file/d/1Dgy8dSPxsopl8ymS5L5bCziKlT6uaklV/view?usp=drive_link"
+                    target="_blank"
+                  >
+                    <img src="./image/Resume.png" />
+                  </a>
+                </div>
+              </div>
+
+              <button
+                className="text-lg text-[#1a202c] h-12 w-[175.83px] px-6  rounded-full flex justify-between items-center text-nowrap bg-gradient-to-l from-[#7928CA] to-[#FF0080] hover:bg-gradient-to-r"
+                onClick={() => handleResume()}
+              >
+                My Resume
+                <svg
+                  viewBox="0 0 24 24"
+                  focusable="false"
+                  aria-hidden="true"
+                  className="w-5 h-5"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
         {/* right Section */}

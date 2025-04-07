@@ -37,11 +37,11 @@
   },
   {
     "id": 5,
-    "name": "Shangrila Petition Platform",
-    "para": "A fully Functional MERN Stack Web Application. Having responsive behaviour, smooth touch UI with API Integration. With Admin and Petitioner Panel, along with new features such as Login in with QR Code, Signing In, Setting Global Threshold.",
-    "stack": ["Next.js", "CSS3", "React.js", "MUI", "SEO"],
-    "visit": "/#",
-    "github": "/#",
-    "img": "image/news-o-pedia.png"
+    "name": "Wood Texture",
+    "para": "A fully Functional Web Application. Having responsive behaviour, smooth touch UI with API Integration.",
+    "stack": ["React", "Json Data", "Tailwind CSS"],
+    "visit": "https://woodtexture47.netlify.app/",
+    "github": "https://github.com/UsmanMirza47/WoodTexture",
+    "img": "./image/woodTexture.png"
   }
 ]
