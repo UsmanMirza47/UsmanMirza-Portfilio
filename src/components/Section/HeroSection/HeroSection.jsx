@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import heroImage1 from "./IMG-20230130-WA0018.jpg";
 import { IoCloseOutline } from "react-icons/io5";
 
@@ -64,10 +64,14 @@ const HeroSection = () => {
                 {/* Resume Image */}
                 <div className="p-3">
                   <a
-                    href="https://drive.google.com/file/d/1Dgy8dSPxsopl8ymS5L5bCziKlT6uaklV/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1bHaaB0hRv_lU5ydqL7RXcwZ0eJj0aSWL/view?usp=drive_link"
                     target="_blank"
                   >
-                    <img src="./image/Resume.png" />
+                    <img
+                      src="./image/Resume.png"
+                      loading="lazy"
+                      fetchPriority="low"
+                    />
                   </a>
                 </div>
               </div>
@@ -109,6 +113,7 @@ const HeroSection = () => {
           <div className="w-full h-[350px] overflow-hidden rounded-2xl flex flex-grow relative z-10">
             <img
               src={heroImage1}
+              loading="lazy"
               className="object-cover object-center w-full h-full"
             />
           </div>

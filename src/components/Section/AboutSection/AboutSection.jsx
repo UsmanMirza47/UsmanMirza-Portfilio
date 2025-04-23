@@ -37,6 +37,7 @@ const AboutSection = () => {
           <div className="w-full h-full">
             <img
               src={aboutImg}
+              loading="lazy"
               className="object-cover object-center w-full h-full rounded-md"
             ></img>
           </div>

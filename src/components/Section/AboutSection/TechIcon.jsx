@@ -1,5 +1,6 @@
 import React from "react";
 import reactSvg from "/react-2.svg";
+import material from "/material.svg";
 
 const TechIcon = () => {
   return (
@@ -14,7 +15,7 @@ const TechIcon = () => {
               strokeWidth="0"
               viewBox="0 0 512 512"
               focusable="false"
-              className="w-12 h-10"
+              className="w-9 h-9"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M64 32l34.94 403.21L255.77 480 413 435.15 448 32zm308 132H188l4 51h176l-13.51 151.39L256 394.48l-98.68-28-6.78-77.48h48.26l3.42 39.29L256 343.07l53.42-14.92L315 264H148l-12.59-149.59H376.2z"></path>
@@ -121,7 +122,9 @@ const TechIcon = () => {
         </div>
         {/* Git */}
         <div className="flex flex-row justify-center items-center">
-          <div className="w-12 h-8 rounded-full flex justify-center items-center bg-white"></div>
+          <div className="w-12 h-8 rounded-full flex justify-center items-center bg-white">
+            <img src={material} className="w-10 h-10" />
+          </div>
         </div>
         {/* Css */}
         <div className="flex flex-row justify-center items-center">
