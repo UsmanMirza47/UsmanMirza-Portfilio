@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import navItem from "../API/navItem.json";
+import Close from "../SVG/Close";
+import Humburger from "../SVG/Humburger";
 
 const Navbar = () => {
   const [isNavStatusVisible, setIsNavStatusVisible] = useState(false);
@@ -17,8 +20,8 @@ const Navbar = () => {
   };
 
   return (
-    <div id="home" className="w-full">
-      <nav className="w-full flex justify-between items-center h-16 bg-navBg text-white px-4 relative poppins">
+    <div id="home" className="w-full bg-navBg">
+      <nav className="w-full max-w-[1280px] mx-auto flex justify-between items-center h-16 text-white px-4 relative poppins">
         {/* Left-Section */}
         <div className="flex items-center gap-x-9">
           {/* HumburgerBtn */}
@@ -26,33 +29,7 @@ const Navbar = () => {
             className="w-10 h-10 flex justify-center items-center bg-[#ffffff14] text-[#ffffffeb] rounded-md sm:hidden"
             onClick={handleNavVisHid}
           >
-            {isNavVisible ? (
-              <svg
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-                focusable="false"
-                className="w-4 h-4"
-              >
-                <path
-                  fill="#ffffffeb"
-                  d="M.439,21.44a1.5,1.5,0,0,0,2.122,2.121L11.823,14.3a.25.25,0,0,1,.354,0l9.262,9.263a1.5,1.5,0,1,0,2.122-2.121L14.3,12.177a.25.25,0,0,1,0-.354l9.263-9.262A1.5,1.5,0,0,0,21.439.44L12.177,9.7a.25.25,0,0,1-.354,0L2.561.44A1.5,1.5,0,0,0,.439,2.561L9.7,11.823a.25.25,0,0,1,0,.354Z"
-                  className="w-4 h-4"
-                ></path>
-              </svg>
-            ) : (
-              <svg
-                viewBox="0 0 24 24"
-                focusable="false"
-                aria-hidden="true"
-                className="w-4 h-4"
-              >
-                <path
-                  fill="currentColor"
-                  d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"
-                  className="w-4 h-4"
-                ></path>
-              </svg>
-            )}
+            {isNavVisible ? <Close /> : <Humburger />}
           </button>
 
           {/* Logo */}
@@ -60,34 +37,23 @@ const Navbar = () => {
             Usman Mirza
           </h1>
           <ul className="items-center gap-x-6 hidden sm:flex">
-            <a href="#home">
-              <li className="text-subtitleColor text-[16px] cursor-pointer px-2 py-1 rounded hover:bg-[#2d3748] transition-all duration-150 ease-out-[cubic-bezier(0, 0, 0.2, 1)]">
-                Home
-              </li>
-            </a>
-            <a href="#about">
-              <li className="text-subtitleColor text-[16px] cursor-pointer px-2 py-1 rounded hover:bg-[#2d3748] transition-all duration-150 ease-out-[cubic-bezier(0, 0, 0.2, 1)]">
-                About
-              </li>
-            </a>
-            {/* <li className="text-subtitleColor text-[16px] cursor-pointer px-2 py-1 rounded hover:bg-[#2d3748] transition-all duration-150 ease-out-[cubic-bezier(0, 0, 0.2, 1)]">
-              Experience
-            </li> */}
-            <a href="#project">
-              <li className="text-subtitleColor text-[16px] cursor-pointer  px-2 py-1 rounded hover:bg-[#2d3748] transition-all duration-150 ease-out-[cubic-bezier(0, 0, 0.2, 1)]">
-                Projects
-              </li>
-            </a>
-            <a href="#contact">
-              <li className="text-subtitleColor text-[16px] cursor-pointer  px-2 py-1 rounded hover:bg-[#2d3748] transition-all duration-150 ease-out-[cubic-bezier(0, 0, 0.2, 1)]">
-                Contact
-              </li>
-            </a>
+            {navItem.map((item) => {
+              return (
+                <li key={item.id}>
+                  <a
+                    href={item.path}
+                    className="text-subtitleColor text-[16px] cursor-pointer px-2 py-1 rounded hover:bg-[#2d3748] transition-all duration-150 ease-out-[cubic-bezier(0, 0, 0.2, 1)]"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
         {/* Right-Section */}
         <button
-          className="w-8 h-8 rounded-full relative bg-[url(/image/logo.jpeg)] bg-center bg-cover bg-no-repeat"
+          className="w-8 h-8 rounded-full relative bg-[url(/image/IMG/logo.jpeg)] bg-center bg-cover bg-no-repeat"
           onClick={(event) => {
             handleNavStatus(event);
           }}
@@ -108,10 +74,23 @@ const Navbar = () => {
           } border border-subtitleColor transition-all duration-300`}
         >
           <div className="w-32 h-32 rounded-full bg-slate-500 flex justify-between items-center">
-            <img
-              src="/image/logo.jpeg"
-              className="w-full h-full rounded-full"
-            />
+            <picture>
+              <source
+                srcSet="./image/WEBP/logo.webp"
+                type="image/webp"
+                className="w-full h-full rounded-full"
+              />
+              <source
+                srcSet="./image/AVIF/logo.avif"
+                type="image/avif"
+                className="w-full h-full rounded-full"
+              />
+              <img
+                src="./image/IMG/logo.jpeg"
+                className="w-full h-full rounded-full"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div>
             <p className="text-center mt-4">
@@ -134,48 +113,21 @@ const Navbar = () => {
         } h-44 w-full sm:hidden bg-navBg box-border  transition-all duration-300`}
       >
         <ul className="flex flex-col justify-between items-start p-4 box-border h-full">
-          <a
-            href="#home"
-            className="text-subtitleColor text-[16px] block w-full cursor-pointer"
-            onClick={() => {
-              setIsNavVisible();
-            }}
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            className="text-subtitleColor text-[16px] block w-full cursor-pointer"
-            onClick={() => {
-              setIsNavVisible();
-            }}
-          >
-            About
-          </a>
-          {/* <a
-            href="#"
-            className="text-subtitleColor text-[16px] block w-full cursor-pointer"
-          >
-            Experience
-          </a> */}
-          <a
-            href="#project"
-            className="text-subtitleColor text-[16px] block w-full cursor-pointer"
-            onClick={() => {
-              setIsNavVisible();
-            }}
-          >
-            Projects
-          </a>
-          <a
-            href="#contact"
-            className="text-subtitleColor text-[16px] block w-full cursor-pointer"
-            onClick={() => {
-              setIsNavVisible();
-            }}
-          >
-            Contact
-          </a>
+          {navItem.map((item) => {
+            return (
+              <li key={item.id}>
+                <a
+                  href={item.path}
+                  className="text-subtitleColor text-[16px] block w-full cursor-pointer"
+                  onClick={() => {
+                    setIsNavVisible();
+                  }}
+                >
+                  {item.name}
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </div>

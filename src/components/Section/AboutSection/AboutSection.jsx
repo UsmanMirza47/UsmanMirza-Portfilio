@@ -1,13 +1,12 @@
-import React from "react";
-import aboutImg from "./image.jpg";
 import TechIcon from "./TechIcon";
+import SkillIcon from "../../API/SkillIcon.json";
 
 const AboutSection = () => {
   return (
     <>
       <section id="about" className="w-full bg-bodyBg text-subtitleColor">
         {/* main Section */}
-        <div className="max-w-[992px] mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="max-w-[1280px] mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Section */}
           <div className="flex flex-col gap-4 text-subtitleColor">
             <p className="p-2 text-[#4299e1] bg-[#1a365d] font-[600] rounded-md text-sm w-fit">
@@ -30,15 +29,35 @@ const AboutSection = () => {
               Some of the Stack I know
             </p>
             {/* Icon Start */}
-            <TechIcon />
+            <div className="grid grid-cols-5 grid-rows-2 gap-4 bg-activeBarBg w-[100%] sm:w-[80%] md:w-[100%] mx-auto p-2 rounded-md">
+              {SkillIcon.map((item) => {
+                return <TechIcon key={item.id} item={item} />;
+              })}
+            </div>
+
             {/* Icon Close */}
           </div>
           {/* Right Section */}
           <div className="w-full h-full">
+            <picture>
+              <source
+                srcSet="./image/AVIF/image.avif"
+                type="image/avif"
+                className="object-cover object-center w-full h-full rounded-md"
+              />
+              <source
+                srcSet="./image/WEBP/image.webp"
+                type="image/webp"
+                className="object-cover object-center w-full h-full rounded-md"
+              />
+            </picture>
             <img
-              src={aboutImg}
+              src="./image/IMG/image.jpg"
+              alt="About Me"
               loading="lazy"
               className="object-cover object-center w-full h-full rounded-md"
+              width="100%"
+              height="100%"
             ></img>
           </div>
         </div>

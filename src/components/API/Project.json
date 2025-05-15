@@ -6,7 +6,9 @@
     "stack": ["React.js", "API", "Tailwind CSS"],
     "visit": "https://worldatlas47.netlify.app/",
     "github": "https://github.com/UsmanMirza47/CountryAxiosRouter",
-    "img": "image/WorldAtlas.png"
+    "img": "image/IMG/WorldAtlas.png",
+    "avif": "image/AVIF/WorldAtlas.avif",
+    "webp": "image/WEBP/WorldAtlas.webp"
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@
     "stack": ["React.js", "Tailwind CSS", "Json Data"],
     "visit": "https://usmanmirza47portfolio.netlify.app/",
     "github": "https://github.com/UsmanMirza47/UsmanMirza-Portfilio",
-    "img": "image/PersonalPortfolio.png"
+    "img": "image/IMG/PersonalPortfolio.png",
+    "avif": "image/AVIF/PersonalPortfolio.avif",
+    "webp": "image/WEBP/PersonalPortfolio.webp"
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "stack": ["React.js", "Tailwind CSS", "JSON Data"],
     "visit": "https://razorpay47clone.netlify.app/",
     "github": "https://github.com/UsmanMirza47/Razorpay-Clone",
-    "img": "image/RazorPay.png"
+    "img": "image/IMG/RazorPay.png",
+    "avif": "image/AVIF/RazorPay.avif",
+    "webp": "image/WEBP/RazorPay.webp"
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "stack": ["React.js", "Tailwind CSS", "Redux Toolkit", "React-Router"],
     "visit": "https://notesapp47.netlify.app/",
     "github": "https://github.com/UsmanMirza47/NotesApp",
-    "img": "image/NotesApp.png"
+    "img": "image/IMG/NotesApp.png",
+    "avif": "image/AVIF/NotesApp.avif",
+    "webp": "image/WEBP/NotesApp.webp"
   },
   {
     "id": 5,
@@ -42,6 +50,8 @@
     "stack": ["React", "Json Data", "Tailwind CSS"],
     "visit": "https://woodtexture47.netlify.app/",
     "github": "https://github.com/UsmanMirza47/WoodTexture",
-    "img": "./image/woodTexture.png"
+    "img": "./image/IMG/woodTexture.png",
+    "avif": "image/AVIF/woodTexture.avif",
+    "webp": "image/WEBP/woodTexture.webp"
   }
 ]

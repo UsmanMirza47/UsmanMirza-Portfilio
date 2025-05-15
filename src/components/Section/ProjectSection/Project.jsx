@@ -1,10 +1,12 @@
-import React from "react";
 import project from "../../API/Project.json";
 import CurProject from "./CurProject";
 
 const Project = () => {
   return (
-    <section id="project" className="w-full h-full px-4">
+    <section
+      id="project"
+      className="w-full h-full px-4  max-w-[1280px] mx-auto"
+    >
       {/* top Heading */}
       <div className="w-full">
         <div className="py-4 flex justify-center items-center">

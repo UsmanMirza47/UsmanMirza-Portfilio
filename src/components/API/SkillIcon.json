@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "path": "./image/SVG/html-1.svg",
+    "alt": "HTML"
+  },
+  {
+    "id": 2,
+    "path": "./image/SVG/css-3.svg",
+    "alt": "CSS"
+  },
+  {
+    "id": 3,
+    "path": "./image/SVG/javascript-r.svg",
+    "alt": "JavaScript"
+  },
+  {
+    "id": 4,
+    "path": "./image/SVG/react-2.svg",
+    "alt": "React"
+  },
+  {
+    "id": 5,
+    "path": "./image/SVG/tailwind-css-2.svg",
+    "alt": "Tailwind CSS"
+  },
+  {
+    "id": 6,
+    "path": "./image/SVG/material-ui-1.svg",
+    "alt": "Material-UI"
+  },
+  {
+    "id": 7,
+    "path": "./image/SVG/redux.svg",
+    "alt": "Redux"
+  },
+  {
+    "id": 8,
+    "path": "./image/SVG/axios.svg",
+    "alt": "Axios"
+  },
+
+  {
+    "id": 9,
+    "path": "./image/SVG/git-icon.svg",
+    "alt": "Git"
+  },
+  {
+    "id": 10,
+    "path": "./image/SVG/github-icon-1.svg",
+    "alt": "GitHub"
+  }
+]

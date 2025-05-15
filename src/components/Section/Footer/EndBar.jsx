@@ -1,9 +1,7 @@
-import React from "react";
-
 const EndBar = () => {
   return (
-    <div className="text-[#e2e8f0] bg-[#171923] border-t border-[#2d3748]">
-      <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row justify-between items-center p-4 gap-y-4">
+    <div className="text-[#e2e8f0] bg-[#171923] border-t border-[#2d3748] w-full">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center p-4 gap-y-4 max-w-[1280px] mx-auto box-border">
         <p>© 2025 Usman Mirza. All rights reserved</p>
         <div className="flex gap-6">
           <a
