@@ -28,7 +28,7 @@ const HeroSection = () => {
               Portfolio!
             </span>
           </h2>
-          <p className="text-[#a0aec0] text-wrap ">
+          <p className="text-[#a0aec0] text-wrap" rel="preload">
             I am a front-end developer. I am skilled in React.js, Tailwind CSS,
             and JavaScript. I am passionate about creating interactive and
             beautiful user interfaces, along with the required functionalities
