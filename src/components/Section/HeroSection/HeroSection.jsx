@@ -114,6 +114,7 @@ const HeroSection = () => {
               width="1280px"
               height="853px"
               rel="preload"
+              loading="eager"
             />
             <source
               srcSet="./image/AVIF/IMG-20230130-WA0018.avif"
@@ -123,6 +124,7 @@ const HeroSection = () => {
               width="1280px"
               height="853px"
               rel="preload"
+              loading="eager"
             />
             <img
               srcSet="./image/IMG/IMG-20230130-WA0018.jpg"
@@ -131,6 +133,7 @@ const HeroSection = () => {
               width="1280px"
               height="853px"
               rel="preload"
+              loading="eager"
             />
           </picture>
         </div>

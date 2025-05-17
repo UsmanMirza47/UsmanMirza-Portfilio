@@ -44,17 +44,22 @@ const AboutSection = () => {
                 srcSet="./image/AVIF/image.avif"
                 type="image/avif"
                 className="object-cover object-center w-full h-full rounded-md"
+                loading="eager"
+                rel="preload"
               />
               <source
                 srcSet="./image/WEBP/image.webp"
                 type="image/webp"
                 className="object-cover object-center w-full h-full rounded-md"
+                loading="eager"
+                rel="preload"
               />
             </picture>
             <img
               srcSet="./image/IMG/image.jpg"
               alt="About Me"
-              loading="lazy"
+              loading="eager"
+              rel="preload"
               className="object-cover object-center w-full h-full rounded-md"
               width="100%"
               height="100%"
