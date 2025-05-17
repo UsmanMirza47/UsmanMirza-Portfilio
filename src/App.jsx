@@ -70,27 +70,11 @@ function App() {
       {/* 3. INDEPENDENT LOADING FOR EACH COMPONENT */}
       <DynamicLoader1 component={Navbar} />
       <DynamicLoader component={HeroSection} />
-
-      {/* 4. INTERSECTION OBSERVER FOR BELOW-THE-FOLD */}
-      <LazyOnVisible>
-        <DynamicLoader1 component={AboutSection} />
-      </LazyOnVisible>
-
-      <LazyOnVisible>
-        <DynamicLoader1 component={Project} />
-      </LazyOnVisible>
-
-      <LazyOnVisible>
-        <DynamicLoader1 component={Contact} />
-      </LazyOnVisible>
-
-      <LazyOnVisible>
-        <DynamicLoader1 component={Footer} />
-      </LazyOnVisible>
-
-      <LazyOnVisible>
-        <DynamicLoader1 component={EndBar} />
-      </LazyOnVisible>
+      <DynamicLoader1 component={AboutSection} />
+      <DynamicLoader1 component={Project} />
+      <DynamicLoader1 component={Contact} />
+      <DynamicLoader1 component={Footer} />
+      <DynamicLoader1 component={EndBar} />
     </div>
   );
 }
