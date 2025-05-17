@@ -6,7 +6,7 @@ const AboutSection = () => {
     <>
       <section id="about" className="w-full bg-bodyBg text-subtitleColor">
         {/* main Section */}
-        <div className="max-w-[1280px] mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="max-w-[992px] 2xl:max-w-[1280px] mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Left Section */}
           <div className="flex flex-col gap-4 text-subtitleColor">
             <p className="p-2 text-[#4299e1] bg-[#1a365d] font-[600] rounded-md text-sm w-fit">
@@ -52,7 +52,7 @@ const AboutSection = () => {
               />
             </picture>
             <img
-              src="./image/IMG/image.jpg"
+              srcSet="./image/IMG/image.jpg"
               alt="About Me"
               loading="lazy"
               className="object-cover object-center w-full h-full rounded-md"

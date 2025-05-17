@@ -72,9 +72,10 @@ const HeroSection = () => {
                     target="_blank"
                   >
                     <img
-                      src="./image/IMG/Resume.png"
-                      loading="lazy"
+                      srcSet="./image/IMG/Resume.png"
+                      alt="hero-image"
                       fetchPriority="low"
+                      loading="lazy"
                     />
                   </a>
                 </div>
@@ -104,16 +105,34 @@ const HeroSection = () => {
               fill="#FF0080"
             ></path>
           </svg>
-          <div className="w-full h-[350px] overflow-hidden rounded-2xl flex flex-grow relative z-10">
-            <img
-              src="./image/IMG/IMG-20230130-WA0018.jpg"
-              loading="lazy"
-              className="object-cover object-center w-full h-full"
+          <picture className="w-full h-[350px] overflow-hidden rounded-2xl flex flex-grow relative z-10">
+            <source
+              srcSet="./image/WEBP/IMG-20230130-WA0018.webp"
+              type="image/webp"
+              className="object-cover object-center"
               alt="Hero Image"
-              width="100%"
-              height="100%"
+              width="1280px"
+              height="853px"
+              rel="preload"
             />
-          </div>
+            <source
+              srcSet="./image/AVIF/IMG-20230130-WA0018.avif"
+              type="image/avif"
+              className="object-cover object-center"
+              alt="Hero Image"
+              width="1280px"
+              height="853px"
+              rel="preload"
+            />
+            <img
+              srcSet="./image/IMG/IMG-20230130-WA0018.jpg"
+              className="object-cover object-center"
+              alt="Hero Image"
+              width="1280px"
+              height="853px"
+              rel="preload"
+            />
+          </picture>
         </div>
       </div>
       {/* Social Media Links */}

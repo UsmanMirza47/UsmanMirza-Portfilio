@@ -88,7 +88,8 @@ const Navbar = () => {
               <img
                 src="./image/IMG/logo.jpeg"
                 className="w-full h-full rounded-full"
-                loading="lazy"
+                rel="preload"
+                alt="logo"
               />
             </picture>
           </div>

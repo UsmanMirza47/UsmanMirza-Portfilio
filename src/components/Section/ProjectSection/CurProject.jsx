@@ -3,7 +3,7 @@ import React from "react";
 const CurProject = ({ curProject }) => {
   const { id, img, name, para, stack, visit, github, avif, webp } = curProject;
   return (
-    <div className="w-full md:w-[400px] relative rounded-[10px] h-[790px] md:h-[650px] m-4 shadow-2xl mx-auto md:mx-2 bg-bodyBg">
+    <div className="w-full md:w-[400px] relative rounded-[10px] h-[790px] md:h-[650px] m-4 shadow-2xl mx-auto md:mx-2 bg-bodyBg content-visibility-auto">
       <picture>
         <source
           srcSet={avif}
@@ -22,12 +22,12 @@ const CurProject = ({ curProject }) => {
           height={250}
         />
         <img
-          src="./image/4.png"
+          srcSet="./image/4.png"
           loading="lazy"
           className="w-full md:w-[400px] h-[250px] md:h-[210px] rounded-t-md mx-auto"
           alt="Project"
-          width={400}
-          height={250}
+          width="400px"
+          height="250px"
         />
       </picture>
       <div className="py-4 px-4">

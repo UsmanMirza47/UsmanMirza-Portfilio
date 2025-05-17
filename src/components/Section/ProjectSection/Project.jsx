@@ -8,7 +8,7 @@ const Project = () => {
       className="w-full h-full px-4  max-w-[1280px] mx-auto"
     >
       {/* top Heading */}
-      <div className="w-full">
+      <div className="w-full ">
         <div className="py-4 flex justify-center items-center">
           <p className="uppercase font-semibold text-sm p-2 rounded-md bg-[#1a365d] text-[#4299e1]">
             my projects
