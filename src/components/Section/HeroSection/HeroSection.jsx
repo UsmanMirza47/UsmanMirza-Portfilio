@@ -68,11 +68,11 @@ const HeroSection = () => {
                 {/* Resume Image */}
                 <div className="p-3">
                   <a
-                    href="https://drive.google.com/file/d/1bHaaB0hRv_lU5ydqL7RXcwZ0eJj0aSWL/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1MD2WPWFCJwtJZTc8tKNO4JB4tYc8NdVb/view?usp=drive_link"
                     target="_blank"
                   >
                     <img
-                      srcSet="./image/IMG/Resume.png"
+                      srcSet="./image/Resume2.png"
                       alt="hero-image"
                       fetchPriority="low"
                       loading="lazy"
